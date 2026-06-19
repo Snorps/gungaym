@@ -1,0 +1,6 @@
+resource.AddFile("sound/gy/canttouch.wav")
+resource.AddFile("sound/gy/boomhead.wav")
+resource.AddFile("sound/gy/best.wav")
+resource.AddFile("sound/gy/cowa.wav") --hue
+resource.AddFile("materials/sprites/scope_new.vmt")
+resource.AddFile("materials/sprites/scope_new.vtf")

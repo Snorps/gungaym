@@ -1,0 +1,14 @@
+"AddonInfo"
+{
+	"name" "Gungaym (~Dangerous~ Latest Release!)"
+	"author_name" "Author Name"
+	"info" "
+{
+	"description": "Description",
+	"type": "gamemode",
+	"tags": 
+	[
+		"fun"
+	]
+}"
+}

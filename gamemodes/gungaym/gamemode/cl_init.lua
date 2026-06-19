@@ -1,0 +1,8 @@
+CreateClientConVar( "gy_nextwep_enabled", "1", true, false )
+CreateClientConVar( "gy_nextwep_delay", ".4", true, false )
+include( "shared.lua" )
+include( "cl_hud.lua" )
+include( "wepgen.lua" )
+include( "cl_hudpickup.lua" )
+InitializeFonts()
+include( "cl_deathnotices.lua" )
