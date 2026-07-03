@@ -142,8 +142,7 @@ function DrawHUD()
 			local mag_left = ply:GetActiveWeapon():Clip1() //How much ammunition you have inside the cusrrent magazine
 			local mag_extra = ply:GetAmmoCount(ply:GetActiveWeapon():GetPrimaryAmmoType()) //How much ammunition you have outside the current magazine
 			
-			--TODO: Change this back to PrintName
-			name = ply:GetActiveWeapon().ClassName
+			name = ply:GetActiveWeapon().PrintName
 			draw.SimpleTextOutlined((name) ,"currentweapon", ScrW()/1.215, ScrH()/1.08, Color(255,255,255), TEXT_ALIGN_RIGHT, TEXT_ALIGN_TOP,1.5, Color(74,74,74))
 			
 
