@@ -64,6 +64,11 @@ function OnKill( victim, weapon, killer )
 		end
 	end
 	
+	--if normal round and kill was with knife
+	if weapon:GetClass() == "gy_knife" then
+		return --don't promote
+	end
+	
 	timer.Simple(.1,function() victim:Extinguish() end)
 	local prevlev = killer:GetNWInt("level") --Define the killer's level for convienence
 	local wep = weplist[prevlev]
