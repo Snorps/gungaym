@@ -79,8 +79,7 @@ function OnKill( victim, weapon, killer )
 		RoundEnd(killer)
 	end
 	
-	
-	if victim == killer or not IsValid(killer) then --If you kill yourself/Fall to your death (I *think* no wep=fall basically)
+	if victim == killer or not IsValid(killer) or killer:GetClass() == "trigger_hurt" then --If you kill yourself/have no killer/get killed by the map :3
 		victim:Demote()
 	else --Else, if someone else killed you
 		if killer:GetNWInt("lifelevel") == 2 then
